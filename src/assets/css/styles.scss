@@ -1,0 +1,25 @@
+@charset 'utf-8';
+
+html,
+body {
+  height: 100%;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 960px;
+
+  ng-component:first-of-type {
+    flex: 1;
+  }
+}
+
+.layout-container {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
