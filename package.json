@@ -1,6 +1,11 @@
 {
   "name": "bellizio",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "url": "https://github.com/bellizio/belliz.io.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,7 +16,6 @@
     "e2e": "ng e2e",
     "hmr": "ng serve --configuration hmr"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^6.0.5",
     "@angular/common": "^6.0.5",
