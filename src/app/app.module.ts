@@ -7,9 +7,10 @@ import { environment } from '../environments/environment';
 import { SharedModule } from './_shared/shared.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, AboutComponent],
+  declarations: [AppComponent, AboutComponent, ContactComponent],
   imports: [
     BrowserModule,
     ServiceWorkerModule.register('/ngsw-worker.js', {
