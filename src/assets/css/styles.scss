@@ -5,21 +5,12 @@ body {
   height: 100%;
 }
 
-.main-wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0 auto;
-  max-width: 960px;
-
-  ng-component:first-of-type {
-    flex: 1;
-  }
+.layout-container {
+  margin-top: 64px;
 }
 
-.layout-container {
-  flex: 1;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 30em) {
+  .layout-container {
+    margin-top: 96px;
+  }
 }
