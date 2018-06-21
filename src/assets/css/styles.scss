@@ -1,16 +1,27 @@
 @charset 'utf-8';
 
+$header-offset-small: 64px;
+$header-offset-large: 96px;
+
 html,
 body {
   height: 100%;
 }
 
 .layout-container {
-  margin-top: 64px;
+  margin-top: $header-offset-small;
+}
+
+.intro-section {
+  height: calc(100vh - #{$header-offset-small});
 }
 
 @media screen and (min-width: 30em) {
   .layout-container {
-    margin-top: 96px;
+    margin-top: #{$header-offset-large};
+  }
+
+  .intro-section {
+    height: calc(100vh - #{$header-offset-large});
   }
 }
