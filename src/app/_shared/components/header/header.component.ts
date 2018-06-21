@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   constructor() {}
+
+  scrollToSection(section: string) {
+    const el = document.getElementById(section);
+
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
