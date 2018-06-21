@@ -8,12 +8,22 @@ body {
   height: 100%;
 }
 
+header {
+  top: 0;
+  z-index: 1000;
+}
+
 .layout-container {
   margin-top: $header-offset-small;
 }
 
 .intro-section {
   height: calc(100vh - #{$header-offset-small});
+}
+
+.social-link {
+  height: 2rem;
+  width: 2rem;
 }
 
 @media screen and (min-width: 30em) {
@@ -23,5 +33,10 @@ body {
 
   .intro-section {
     height: calc(100vh - #{$header-offset-large});
+  }
+
+  .social-link {
+    height: 3rem;
+    width: 3rem;
   }
 }
