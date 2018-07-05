@@ -1,15 +1,11 @@
 @charset 'utf-8';
 
-$header-offset-small: 64px;
-$header-offset-large: 96px;
+$header-offset-small: 67px;
+$header-offset-large: 99px;
 
 html,
 body {
   height: 100%;
-}
-
-a {
-  cursor: pointer;
 }
 
 header {
@@ -28,6 +24,26 @@ header {
 .social-link {
   height: 2rem;
   width: 2rem;
+}
+
+.hover-google-red:focus,
+.hover-google-red:hover {
+  color: #d62d20;
+}
+
+.hover-github-gray:focus,
+.hover-github-gray:hover {
+  color: #333333;
+}
+
+.hover-linkedin-blue:focus,
+.hover-linkedin-blue:hover {
+  color: #0077b5;
+}
+
+.hover-twitter-blue:focus,
+.hover-twitter-blue:hover {
+  color: #1da1f2;
 }
 
 @media screen and (min-width: 30em) {

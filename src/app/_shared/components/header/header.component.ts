@@ -12,7 +12,11 @@ export class HeaderComponent {
     const el = document.getElementById(section);
 
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+      if (section === 'intro') {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      } else {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   }
 }
