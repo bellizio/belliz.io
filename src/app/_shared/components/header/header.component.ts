@@ -15,7 +15,11 @@ export class HeaderComponent {
       if (section === 'intro') {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
       } else {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({
+          behavior: 'smooth',
+          block: 'end',
+          inline: 'nearest'
+        });
       }
     }
   }

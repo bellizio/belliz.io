@@ -17,7 +17,9 @@ header {
   margin-top: $header-offset-small;
 }
 
-.intro-section {
+.intro-section,
+.about-section,
+.contact-section {
   height: calc(100vh - #{$header-offset-small});
 }
 
@@ -51,7 +53,9 @@ header {
     margin-top: #{$header-offset-large};
   }
 
-  .intro-section {
+  .intro-section,
+  .about-section,
+  .contact-section {
     height: calc(100vh - #{$header-offset-large});
   }
 
