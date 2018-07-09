@@ -1,14 +1,14 @@
 <header class="fixed w-100 bg-white bb b--black-10">
   <nav class="flex items-center justify-between border-box pa2 ph5-l">
-    <a class="flex dark-gray link dim" routerLink="">
+    <a class="flex dark-gray link dim" href="https://belliz.io">
       <!-- <h1>db</h1> -->
       <img src="http://via.placeholder.com/100x100" class="br-100 ba w2 h2 w3-ns h3-ns" alt="Site Name">
     </a>
     <div class="flex">
-      <a class="link black dim f6 f5-ns dib mr3 mr4-ns pointer" (click)="scrollToSection('intro')" title="Home">Home</a>
-      <a class="link black dim f6 f5-ns dib mr3 mr4-ns pointer" (click)="scrollToSection('about')" title="About">About</a>
-      <a class="link black dim f6 f5-ns dib mr3 mr4-ns pointer" (click)="scrollToSection('contact')" title="Contact">Contact</a>
-      <a class="link black dim f6 f5-ns dib" href="#" title="Resume">Resume</a>
+      <a class="link black dim f6 f5-ns dib mr3 mr4-ns pointer" href="" (click)="scrollToSection($event, 'intro')" title="Home">Home</a>
+      <a class="link black dim f6 f5-ns dib mr3 mr4-ns pointer" href="" (click)="scrollToSection($event, 'about')" title="About">About</a>
+      <a class="link black dim f6 f5-ns dib mr3 mr4-ns pointer" href="" (click)="scrollToSection($event, 'contact')" title="Contact">Contact</a>
+      <a class="link black dim f6 f5-ns dib" href="#" target="_blank" rel="noopener" title="Resume">Resume</a>
     </div>
   </nav>
 </header>

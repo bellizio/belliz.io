@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   constructor() {}
 
-  scrollToSection(section: string) {
+  scrollToSection($event: Event, section: string) {
     const el = document.getElementById(section);
+
+    $event.preventDefault();
+    $event.stopPropagation();
 
     if (el) {
       el.scrollIntoView({
