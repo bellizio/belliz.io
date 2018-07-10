@@ -44,6 +44,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets/images",
+              "src/assets/files",
               "src/manifest.json"
             ],
             "styles": [
@@ -115,6 +116,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets/images",
+              "src/assets/files",
               "src/manifest.json"
             ]
           }
