@@ -64,3 +64,13 @@ header {
     width: 3rem;
   }
 }
+
+.underline-animate {
+  box-shadow: inset 0 0px 0;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: inset 0 -3px 0 0 #f4f4f4;
+  }
+}
