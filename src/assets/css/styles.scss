@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-$header-offset-small: 48px;
+$header-offset-small: 64px;
 $header-offset-large: 80px;
 
 html,
@@ -11,6 +11,10 @@ body {
 header {
   top: 0;
   z-index: 1000;
+}
+
+.logo {
+  height: 2rem;
 }
 
 .layout-container {
@@ -63,6 +67,10 @@ header {
     height: 3rem;
     width: 3rem;
   }
+
+  .logo {
+    height: 3rem;
+  }
 }
 
 .highlight-animate {
@@ -93,7 +101,6 @@ header {
     transform: translateY(5px);
   }
 
-  &:focus,
   &:hover {
     &::after {
       border-radius: 3px;
