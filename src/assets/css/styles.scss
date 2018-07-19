@@ -24,13 +24,15 @@ header {
   height: 2rem;
 }
 
+.headshot {
+  height: 300px;
+}
+
 .layout-container {
   margin-top: $header-offset-small;
 }
 
-.intro-section,
-.about-section,
-.contact-section {
+.page-section {
   height: calc(100vh - #{$header-offset-small});
 }
 
@@ -64,9 +66,7 @@ header {
     margin-top: #{$header-offset-large};
   }
 
-  .intro-section,
-  .about-section,
-  .contact-section {
+  .page-section {
     height: calc(100vh - #{$header-offset-large});
   }
 
@@ -77,6 +77,10 @@ header {
 
   .logo {
     height: 3rem;
+  }
+
+  .headshot {
+    height: 400px;
   }
 }
 
