@@ -2,6 +2,9 @@
 
 $header-offset-small: 64px;
 $header-offset-large: 80px;
+$blue: #357edd;
+$yellow: #ffd700;
+$near-white: #f4f4f4;
 
 html,
 body {
@@ -11,6 +14,10 @@ body {
 header {
   top: 0;
   z-index: 1000;
+}
+
+::selection {
+  background: $yellow;
 }
 
 .logo {
@@ -75,14 +82,14 @@ header {
 
 .highlight-animate-up {
   box-shadow: inset 0 0px 0;
-  color: #357edd;
+  color: $blue;
   display: inline-block;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    box-shadow: inset 0 -24px 0 0 #357edd;
-    color: #f4f4f4;
+    box-shadow: inset 0 -24px 0 0 $blue;
+    color: $near-white;
   }
 }
 
@@ -97,7 +104,7 @@ header {
     left: 0;
     width: 100%;
     height: 0px;
-    background: currentColor;
+    background: $blue;
     content: '';
     opacity: 0;
     transition: height 0.3s, opacity 0.3s, transform 0.3s;
