@@ -7,7 +7,7 @@ import { Location } from '@angular/common';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private path: string;
+  public path: string;
 
   constructor(private location: Location) {
     this.path = this.location.path();
