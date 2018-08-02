@@ -57,25 +57,6 @@ header {
   color: #1da1f2;
 }
 
-@media screen and (min-width: 30em) {
-  .layout-container {
-    margin-top: #{$header-offset-large};
-  }
-
-  .page-section {
-    height: calc(100vh - #{$header-offset-large});
-  }
-
-  .social-link {
-    height: 3rem;
-    width: 3rem;
-  }
-
-  .logo {
-    height: 3rem;
-  }
-}
-
 .highlight-animate-up {
   box-shadow: inset 0 0px 0;
   color: $blue;
@@ -137,6 +118,81 @@ header {
   &:hover {
     &::after {
       transform: translateY(5px);
+    }
+  }
+}
+
+.terminal-text {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: $near-white;
+    position: absolute;
+    top: 3px;
+    right: -20px;
+    /* Set height to the line-height of .terminal-text */
+    height: 24px;
+    width: 12px;
+    /*
+      Animation paramaters:
+      blink = animation-name,
+      1s = animation-duration,
+      step-end = animation-timing-function,
+      infinite = animation-iteration-count
+    */
+    animation: blink 1s step-end infinite;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .layout-container {
+    margin-top: #{$header-offset-large};
+  }
+
+  .page-section {
+    height: calc(100vh - #{$header-offset-large});
+  }
+
+  .social-link {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .logo {
+    height: 3rem;
+  }
+
+  .terminal-text {
+    &::after {
+      top: 5px;
+      right: -24px;
+      height: 36px;
+      width: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .terminal-text {
+    &::after {
+      top: 6px;
+      right: -36px;
+      height: 48px;
+      width: 24px;
     }
   }
 }
