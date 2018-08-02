@@ -81,7 +81,6 @@ header {
     left: 0;
     width: 100%;
     height: 0px;
-    background: $blue;
     content: '';
     opacity: 0;
     transition: height 0.3s, opacity 0.3s, transform 0.3s;
@@ -98,6 +97,7 @@ header {
 
 .underline-animate-up {
   &::after {
+    background: $yellow;
     bottom: -3px;
     transform: translateY(5px);
   }
@@ -111,6 +111,7 @@ header {
 
 .underline-animate-down {
   &::after {
+    background: $blue;
     bottom: 5px;
     transform: translateY(0px);
   }
