@@ -123,28 +123,21 @@ header {
   }
 }
 
-.terminal-text {
+.terminal-cursor {
   display: inline-block;
-  position: relative;
-
-  &::after {
-    content: '';
-    background-color: $near-white;
-    position: absolute;
-    top: 3px;
-    right: -20px;
-    /* Set height to the line-height of .terminal-text */
-    height: 24px;
-    width: 12px;
-    /*
-      Animation paramaters:
-      blink = animation-name,
-      1s = animation-duration,
-      step-end = animation-timing-function,
-      infinite = animation-iteration-count
-    */
-    animation: blink 1s step-end infinite;
-  }
+  background-color: $near-white;
+  /* Set height to the line-height of .terminal-text */
+  height: 24px;
+  width: 12px;
+  vertical-align: top;
+  /*
+    Animation paramaters:
+    blink = animation-name,
+    1s = animation-duration,
+    step-end = animation-timing-function,
+    infinite = animation-iteration-count
+  */
+  animation: blink 1s step-end infinite;
 }
 
 @keyframes blink {
@@ -177,23 +170,15 @@ header {
     height: 3rem;
   }
 
-  .terminal-text {
-    &::after {
-      top: 5px;
-      right: -24px;
-      height: 36px;
-      width: 16px;
-    }
+  .terminal-cursor {
+    height: 36px;
+    width: 16px;
   }
 }
 
 @media screen and (min-width: 60em) {
-  .terminal-text {
-    &::after {
-      top: 6px;
-      right: -36px;
-      height: 48px;
-      width: 24px;
-    }
+  .terminal-cursor {
+    height: 48px;
+    width: 24px;
   }
 }
