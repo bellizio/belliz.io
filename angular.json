@@ -50,7 +50,9 @@
             "styles": [
               "src/assets/css/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/gumshoejs/dist/js/gumshoe.min.js"
+            ]
           },
           "configurations": {
             "production": {

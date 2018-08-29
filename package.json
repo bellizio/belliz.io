@@ -29,6 +29,7 @@
     "@angular/router": "^6.1.2",
     "@angular/service-worker": "^6.1.2",
     "core-js": "^2.5.7",
+    "gumshoejs": "^3.5.0",
     "rxjs": "^6.2.2",
     "zone.js": "^0.8.26"
   },
