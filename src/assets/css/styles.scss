@@ -85,14 +85,6 @@ header {
     opacity: 0;
     transition: height 0.3s, opacity 0.3s, transform 0.3s;
   }
-
-  &:hover {
-    &::after {
-      border-radius: 3px;
-      height: 2px;
-      opacity: 1;
-    }
-  }
 }
 
 .underline-animate-up {
@@ -102,8 +94,11 @@ header {
     transform: translateY(5px);
   }
 
-  &:hover {
+  &.active {
     &::after {
+      border-radius: 3px;
+      height: 2px;
+      opacity: 1;
       transform: translateY(0);
     }
   }
@@ -118,6 +113,9 @@ header {
 
   &:hover {
     &::after {
+      border-radius: 3px;
+      height: 2px;
+      opacity: 1;
       transform: translateY(5px);
     }
   }
