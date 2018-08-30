@@ -3,7 +3,7 @@
   "short_name": "belliz.io",
   "description": "devon bellizio website",
   "lang": "en-US",
-  "theme_color": "#111111",
+  "theme_color": "#f4f4f4",
   "background_color": "#f4f4f4",
   "display": "minimal-ui",
   "scope": "/",
