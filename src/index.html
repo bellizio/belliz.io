@@ -3,31 +3,46 @@
 
 <head>
   <meta charset="utf-8">
-  <title>belliz.io</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="devon bellizio personal website">
   <meta name="keywords" content="bellizio">
-  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+  <title>Devon Bellizio</title>
   <!-- Android -->
-  <meta name="theme-color" content="#1976d2">
+  <!-- https://developer.chrome.com/multidevice/android/installtohomescreen -->
+  <meta name="theme-color" content="#f4f4f4">
   <meta name="mobile-web-app-capable" content="yes">
   <!-- iOS -->
+  <!-- https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
   <meta name="apple-mobile-web-app-title" content="belliz.io">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="apple-touch-icon" href="assets/images/icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="assets/images/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon-180x180.png">
+  <!-- Other -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" sizes="192x192" href="assets/images/icon-192x192.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+  <!-- google analytics -->
+  <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-45640649-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
 </head>
 
-<body class="sans-serif bg-near-black">
+<body class="sans-serif">
   <app-root></app-root>
   <noscript>
     <h4 style="font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica;">
       Sorry, JavaScript needs to be enabled in order to run this application.
     </h4>
   </noscript>
+  <script type="text/javascript" src="https://unpkg.com/smoothscroll-polyfill@0.4.3/dist/smoothscroll.min.js"></script>
 </body>
 
 </html>
