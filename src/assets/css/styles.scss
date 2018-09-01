@@ -29,7 +29,7 @@ header {
 }
 
 .page-section {
-  height: calc(100vh - #{$header-offset-small});
+  min-height: calc(100vh - #{$header-offset-small});
 }
 
 .social-link {
