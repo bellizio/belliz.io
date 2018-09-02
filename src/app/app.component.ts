@@ -1,6 +1,8 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { Location } from '@angular/common';
+import 'smooth-scroll';
 import * as gumshoe from 'gumshoejs';
+declare var SmoothScroll: any;
 declare var gumshoe: any;
 
 @Component({
@@ -16,6 +18,10 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      header: '[data-scroll-header]',
+      updateURL: false
+    });
     gumshoe.init();
   }
 }

@@ -7,19 +7,4 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   constructor() {}
-
-  scrollToSection($event: Event, section: string) {
-    const el = document.getElementById(section);
-
-    $event.preventDefault();
-    $event.stopPropagation();
-
-    if (el) {
-      el.scrollIntoView({
-        behavior: 'smooth',
-        block: 'end',
-        inline: 'nearest'
-      });
-    }
-  }
 }
