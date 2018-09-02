@@ -51,6 +51,7 @@
               "src/assets/css/styles.scss"
             ],
             "scripts": [
+              "node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
               "node_modules/gumshoejs/dist/js/gumshoe.min.js"
             ]
           },
