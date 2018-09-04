@@ -2,8 +2,8 @@ import { Component, AfterViewInit } from '@angular/core';
 import { Location } from '@angular/common';
 import 'smooth-scroll';
 import * as gumshoe from 'gumshoejs';
-declare var SmoothScroll: any;
-declare var gumshoe: any;
+declare const SmoothScroll: any;
+declare const gumshoe: any;
 
 @Component({
   selector: 'app-root',
@@ -18,7 +18,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    var scroll = new SmoothScroll('a[href*="#"]', {
+    const scroll = new SmoothScroll('a[href*="#"]', {
       header: '[data-scroll-header]',
       updateURL: false
     });
