@@ -4,7 +4,7 @@ import dbLogo from '../images/db-logo--white.svg';
 const Header = () => (
   <header
     id="header-component"
-    className="fixed w-100 bg-near-black flex items-center justify-between border-box pv3 ph3 ph5-l"
+    className="fixed w-100 bg-near-black flex items-center justify-between border-box ph3 ph5-l"
     data-scroll-header
   >
     <nav className="ttu f6 lh-copy w-100">

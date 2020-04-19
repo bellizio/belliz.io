@@ -14,6 +14,7 @@ body,
 }
 
 header {
+  height: $header-offset-small;
   top: 0;
   z-index: 1000;
 }
@@ -168,6 +169,10 @@ header {
 }
 
 @media screen and (min-width: 30em) {
+  header {
+    height: $header-offset-large;
+  }
+
   .layout-container {
     margin-top: #{$header-offset-large};
   }
