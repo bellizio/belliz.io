@@ -6,13 +6,6 @@ $blue: #0074d9;
 $yellow: #ffd700;
 $near-white: #f4f4f4;
 
-html,
-body,
-#___gatsby,
-#gatsby-focus-wrapper {
-  height: 100%;
-}
-
 header {
   height: $header-offset-small;
   top: 0;
@@ -32,12 +25,11 @@ header {
 }
 
 .layout-container {
-  height: 100%;
   margin-top: $header-offset-small;
 }
 
 .page-section {
-  min-height: calc(100% - #{$header-offset-small});
+  min-height: calc(100vh - #{$header-offset-small});
 }
 
 .social-link {
@@ -178,7 +170,7 @@ header {
   }
 
   .page-section {
-    min-height: calc(100% - #{$header-offset-large});
+    min-height: calc(100vh - #{$header-offset-large});
   }
 
   .social-link {
