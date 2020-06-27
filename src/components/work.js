@@ -5,6 +5,8 @@ import qsfLogo from '../images/qsf-logo.png';
 import boaLogo from '../images/boa-logo.png';
 import chsLogo from '../images/chs-logo.png';
 import bentleyLogo from '../images/bentley-logo.png';
+import passportLogo from '../images/passport-logo.png';
+import lowesLogo from '../images/lowes-logo.png';
 
 const Work = () => (
   <div
@@ -14,10 +16,26 @@ const Work = () => (
     <h1 className="f2 f1-m f1-l fw5 mt0 mb4 mb5-ns near-black">Work</h1>
     <div className="flex flex-wrap justify-center mw9">
       <a
+        href="https://www.lowes.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="work-tile-link shadow-4 grow mb4 mr4-ns"
+      >
+        <img className="db" src={lowesLogo} alt="Lowe's website" />
+      </a>
+      <a
+        href="https://www.passportinc.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="work-tile-link shadow-4 grow mb4 mr4-l"
+      >
+        <img className="db" src={passportLogo} alt="Passport website" />
+      </a>
+      <a
         href="https://www.epri.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-white shadow-4 grow pa3 flex items-center justify-center w-100 w-40-m w-25-l mb4 mr4-ns"
+        className="work-tile-link shadow-4 grow mb4 mr4-ns"
       >
         <img className="db" src={epriLogo} alt="EPRI website" />
       </a>
@@ -25,7 +43,7 @@ const Work = () => (
         href="https://www.jabil.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-white shadow-4 grow pa3 flex items-center justify-center w-100 w-40-m w-25-l mb4 mr4-l"
+        className="work-tile-link shadow-4 grow mb4"
       >
         <img className="db" src={jabilLogo} alt="Jabil website" />
       </a>
@@ -33,7 +51,7 @@ const Work = () => (
         href="https://www.quietstreamfinancial.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-white shadow-4 grow pa3 flex items-center justify-center w-100 w-40-m w-25-l mb4 mr4-m"
+        className="work-tile-link shadow-4 grow mb4 mb0-l mr4-ns"
       >
         <img className="db" src={qsfLogo} alt="Quietstream website" />
       </a>
@@ -41,7 +59,7 @@ const Work = () => (
         href="https://www.bankofamerica.com"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-white shadow-4 grow pa3 flex items-center justify-center w-100 w-40-m w-25-l mb4 mb0-l mr4-l"
+        className="work-tile-link shadow-4 grow mb4 mb0-l mr4-l"
       >
         <img className="db" src={boaLogo} alt="Bank of America website" />
       </a>
@@ -49,7 +67,7 @@ const Work = () => (
         href="https://www.atriumhealth.org"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-white shadow-4 grow pa3 flex items-center justify-center w-100 w-40-m w-25-l mb4 mb0-ns mr4-ns"
+        className="work-tile-link shadow-4 grow mb4 mb0-l mr4-ns"
       >
         <img className="db" src={chsLogo} alt="CHS website" />
       </a>
@@ -57,7 +75,7 @@ const Work = () => (
         href="https://www.bentley.com/en"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-white shadow-4 grow pa3 flex items-center justify-center w-100 w-40-m w-25-l"
+        className="work-tile-link shadow-4 grow mb4-m"
       >
         <img className="db" src={bentleyLogo} alt="Bentley Systems website" />
       </a>

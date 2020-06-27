@@ -21,7 +21,7 @@ header {
 }
 
 .logo {
-  height: 2rem;
+  height: 32px;
 }
 
 .layout-container {
@@ -33,8 +33,8 @@ header {
 }
 
 .social-link {
-  height: 2rem;
-  width: 2rem;
+  height: 32px;
+  width: 32px;
 }
 
 #nav-list {
@@ -88,7 +88,7 @@ header {
     position: absolute;
     left: 0;
     width: 100%;
-    height: 0px;
+    height: 0;
     content: '';
     opacity: 0;
     transition: height 0.3s, opacity 0.3s, transform 0.3s;
@@ -148,6 +148,15 @@ header {
   animation: blink 1s step-end infinite;
 }
 
+.work-tile-link {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  width: 100%;
+}
+
 @keyframes blink {
   0% {
     opacity: 1;
@@ -174,17 +183,21 @@ header {
   }
 
   .social-link {
-    height: 3rem;
-    width: 3rem;
+    height: 48px;
+    width: 48px;
   }
 
   .logo {
-    height: 3rem;
+    height: 48px;
   }
 
   .terminal-cursor {
     height: 36px;
     width: 16px;
+  }
+
+  .work-tile-link {
+    width: calc(50% - 32px);
   }
 }
 
@@ -192,5 +205,9 @@ header {
   .terminal-cursor {
     height: 48px;
     width: 24px;
+  }
+
+  .work-tile-link {
+    width: calc(25% - 32px);
   }
 }
