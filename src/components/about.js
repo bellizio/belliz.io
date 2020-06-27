@@ -11,13 +11,13 @@ const About = () => (
       software engineer at{' '}
       <a
         className="blue underline-animate-down"
-        href="https://www.passportinc.com"
+        href="https://www.lowes.com"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Passport
+        Lowe's
       </a>{' '}
-      in Charlotte, NC. As a developer, I enjoy architecting and building
+      in Charlotte, NC. As an engineer, I enjoy architecting and building
       modular, scalable, software systems that are both performant and easy to
       use.
       <br />
