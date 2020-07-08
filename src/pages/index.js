@@ -31,7 +31,7 @@ class IndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="Devon Bellizio" />
+        <SEO />
         <Intro />
         <About />
         <Work />
