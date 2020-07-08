@@ -46,6 +46,14 @@ const SEO = (props) => {
           content: metaDescription,
         },
         {
+          property: 'og:description',
+          content: metaDescription,
+        },
+        {
+          property: 'og:image',
+          content: metaImage,
+        },
+        {
           property: 'og:title',
           content: metaTitle,
         },
@@ -58,16 +66,16 @@ const SEO = (props) => {
           content: site.siteMetadata.siteUrl,
         },
         {
-          property: 'og:image',
-          content: metaImage,
-        },
-        {
           name: 'twitter:card',
           content: 'summary',
         },
         {
           name: 'twitter:creator',
           content: site.siteMetadata.twitterUsername,
+        },
+        {
+          name: 'twitter:description',
+          content: metaDescription,
         },
         {
           name: 'twitter:image',
