@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Devon Bellizio',
+    title: 'belliz.io',
     description: `Devon Bellizio's personal website`,
     twitterUsername: `@bellizio`,
     siteUrl: `https://www.belliz.io`,
