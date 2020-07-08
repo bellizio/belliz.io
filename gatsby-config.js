@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `belliz.io`,
+    title: 'belliz.io',
     description: `Devon Bellizio's personal website`,
-    author: `@bellizio`,
+    twitterUsername: `@bellizio`,
     siteUrl: `https://www.belliz.io`,
+    siteImage: 'site-icon.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
