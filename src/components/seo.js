@@ -30,6 +30,7 @@ const SEO = (props) => {
 
   const metaDescription = description || site.siteMetadata.description;
   const metaTitle = title || site.siteMetadata.title;
+  const metaImage = `${site.siteMetadata.siteUrl}/${site.siteMetadata.siteImage}`;
 
   return (
     <Helmet
@@ -58,7 +59,7 @@ const SEO = (props) => {
         },
         {
           property: 'og:image',
-          content: site.siteMetadata.siteImage,
+          content: metaImage,
         },
         {
           name: 'twitter:card',
@@ -70,7 +71,7 @@ const SEO = (props) => {
         },
         {
           name: 'twitter:image',
-          content: site.siteMetadata.siteImage,
+          content: metaImage,
         },
         {
           name: 'twitter:title',
