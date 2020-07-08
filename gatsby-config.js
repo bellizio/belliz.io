@@ -3,7 +3,7 @@ module.exports = {
     title: 'belliz.io',
     description: `Devon Bellizio's personal website`,
     twitterUsername: `@bellizio`,
-    siteUrl: `https://www.belliz.io`,
+    siteUrl: `https://belliz.io`,
     siteImage: 'site-icon.png',
   },
   plugins: [
