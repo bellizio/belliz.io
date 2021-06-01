@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Devon Bellizio',
     description: `Devon Bellizio's personal website`,
-    siteImage: 'site-icon.png',
-    siteUrl: 'https://belliz.io',
+    image: 'site-icon.png',
+    url: 'https://belliz.io',
     titleTemplate: '%s | Devon Bellizio',
     twitterUsername: '@bellizio',
   },
@@ -32,7 +32,6 @@ module.exports = {
         icon: `src/images/site-icon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-google-analytics`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

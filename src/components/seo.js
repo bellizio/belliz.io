@@ -11,16 +11,16 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const SEO = (props) => {
-  const { title, description } = props;
+  const { title, description, image } = props;
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
-            description
-            siteImage
-            siteUrl
+            defaultTitle: title
+            defaultDescription: description
+            defaultImage: image
+            siteUrl: url
             titleTemplate
             twitterUsername
           }
@@ -28,18 +28,21 @@ const SEO = (props) => {
       }
     `
   );
-  const defaults = site.siteMetadata;
 
-  if (!defaults.siteUrl && typeof window !== 'undefined') {
-    defaults.siteUrl = window.location.origin;
-  }
+  const {
+    defaultTitle,
+    defaultDescription,
+    defaultImage,
+    siteUrl,
+    titleTemplate,
+    twitterUsername,
+  } = site.siteMetadata;
 
   const seo = {
-    title: title ? defaults.titleTemplate.replace('%s', title) : defaults.title,
-    description: description || defaults.description,
-    imageUrl: `${defaults.siteUrl}/${defaults.siteImage}`,
-    url: defaults.siteUrl,
-    twitterUsername: defaults.twitterUsername,
+    title: title ? titleTemplate.replace('%s', title) : defaultTitle,
+    description: description || defaultDescription,
+    image: `${siteUrl}/${image || defaultImage}`,
+    url: siteUrl,
   };
 
   return (
@@ -53,27 +56,29 @@ const SEO = (props) => {
       <meta name="og:url" content={seo.url} />
       <meta name="og:title" content={seo.title} />
       <meta name="og:description" content={seo.description} />
-      <meta name="og:image" content={seo.imageUrl} />
+      <meta name="og:image" content={seo.image} />
       {/* Twitter */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.imageUrl} />
-      {seo.twitterUsername && (
-        <meta name="twitter:creator" content={seo.twitterUsername} />
+      <meta name="twitter:image" content={seo.image} />
+      {twitterUsername && (
+        <meta name="twitter:creator" content={twitterUsername} />
       )}
     </Helmet>
   );
 };
 
-SEO.defaultProps = {
-  title: null,
-  description: null,
-};
-
 SEO.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
+  image: PropTypes.string,
+};
+
+SEO.defaultProps = {
+  title: null,
+  description: null,
+  image: null,
 };
 
 export default SEO;
