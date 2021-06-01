@@ -3,7 +3,7 @@ import SEO from '../components/seo';
 
 const NotFoundPage = () => (
   <>
-    <SEO title="404: Not found" />
+    <SEO title="404: Not Found" />
     <div className="vh-100 lh-copy ph3 flex flex-column items-center justify-center">
       <h1 className="f1 f-headline-l code mb3 mt0 fw9 tracked-tight near-black">
         404
