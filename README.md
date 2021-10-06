@@ -2,7 +2,7 @@
 
 My personal website.
 
-Built with [Gatsby](https://www.gatsbyjs.org/) & [Tachyons](https://tachyons.io/). Hosted with [Netlify](https://www.netlify.com/).
+Built as a [PWA](https://web.dev/progressive-web-apps/) with [Gatsby](https://www.gatsbyjs.org/) & [Tachyons](https://tachyons.io/). Hosted with [Netlify](https://www.netlify.com/).
 
 ## Scripts
 
