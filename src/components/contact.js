@@ -8,7 +8,7 @@ const Contact = () => (
   >
     <div className="flex flex-column items-center justify-center flex-auto">
       <h1 className="f2 f1-m f1-l fw5 mt0 mb4 mb5-ns near-white">Contact</h1>
-      <div className="flex justify-between w-100 measure-wide">
+      <div className="flex justify-between w-80 w-100-l measure-wide">
         <a
           className="link hover-github-gray near-white social-link"
           href="https://github.com/bellizio"
