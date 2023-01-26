@@ -8,7 +8,6 @@ module.exports = {
     twitterUsername: '@bellizio',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

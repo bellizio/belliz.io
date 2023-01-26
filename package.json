@@ -20,7 +20,6 @@
     "gatsby-plugin-google-analytics": "^5.5.0",
     "gatsby-plugin-manifest": "^5.5.0",
     "gatsby-plugin-offline": "^6.5.0",
-    "gatsby-plugin-react-helmet": "^6.5.0",
     "gatsby-plugin-sass": "^6.5.0",
     "gatsby-plugin-sharp": "^5.5.0",
     "gatsby-source-filesystem": "^5.5.0",
@@ -29,7 +28,6 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "sass": "^1.57.1",
     "smooth-scroll": "^16.1.3",
     "tachyons": "^4.12.0"
