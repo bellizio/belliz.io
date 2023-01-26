@@ -1,13 +1,12 @@
 /**
  * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
+ * Gatsby's useStaticQuery React hook
  *
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const SEO = (props) => {
@@ -46,7 +45,7 @@ const SEO = (props) => {
   };
 
   return (
-    <Helmet>
+    <>
       <html lang="en" />
       <body className="sans-serif" />
       <title>{seo.title}</title>
@@ -65,7 +64,7 @@ const SEO = (props) => {
       {twitterUsername && (
         <meta name="twitter:creator" content={twitterUsername} />
       )}
-    </Helmet>
+    </>
   );
 };
 

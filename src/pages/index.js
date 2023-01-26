@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Intro from '../components/intro';
@@ -14,31 +14,32 @@ if (typeof window !== 'undefined') {
   Gumshoe = require('gumshoejs');
 }
 
-class IndexPage extends React.Component {
-  componentDidMount() {
+const IndexPage = () => {
+  useEffect(() => {
     const header = document.getElementById('header-component');
-    // eslint-disable-next-line
-    const smoothScroll = new SmoothScroll('a[href*="#"]', {
+
+    new SmoothScroll('a[href*="#"]', {
       header: '[data-scroll-header]',
       updateURL: false,
     });
-    // eslint-disable-next-line
-    const gumshoe = new Gumshoe('#nav-list a', {
+    new Gumshoe('#nav-list a', {
       offset: () => header.getBoundingClientRect().height,
     });
-  }
+  }, []);
 
-  render() {
-    return (
+  return (
+    <>
       <Layout>
-        <SEO />
         <Intro />
         <About />
         <Work />
         <Contact />
       </Layout>
-    );
-  }
-}
+    </>
+  );
+};
+
+// https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
+export const Head = () => <SEO />;
 
 export default IndexPage;
