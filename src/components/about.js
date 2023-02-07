@@ -17,15 +17,24 @@ const About = () => (
       I'm passionate about learning how stuff works inside and out. Since a
       young age, I have been taking things apart and putting them back together.
       This experience has helped me solve challenging problems of varying scale
-      on both an individual level and in collaborative environments. <br />
+      on not only an individual level, but in collaborative environments as
+      well. <br />
       <br />
-      When I am not behind the keyboard, I enjoy spending time restoring,
-      repairing, and riding motorcycles on and off road. One day I want to
-      travel west and explore the desert on my{' '}
+      When I am not behind the keyboard, I enjoy riding motorcycles on and off
+      road. My favorite form of riding is what is known as{' '}
+      <a
+        className="blue underline-animate-down"
+        href="https://hardenduroraces.com/about-hard-enduro"
+        target="__blank"
+      >
+        hard enduro
+      </a>
+      , which is what I spend most of my free time doing. I also ride vintage
+      style dirt bikes, and some day I'd like to haul my{' '}
       <a className="blue underline-animate-down" href="./xr500r.jpg">
         1984 Honda XR500R
-      </a>
-      .
+      </a>{' '}
+      out west for an adventure.
     </p>
   </div>
 );
