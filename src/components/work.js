@@ -65,7 +65,7 @@ const Work = () => (
         <img src={jabilLogo} alt="Jabil website" />
       </a>
       <a
-        href="https://www.quietstreamfinancial.com"
+        href="https://www.linkedin.com/company/quietstream-financial/about"
         target="_blank"
         rel="noopener noreferrer"
         className="work-tile-link grow shadow-4 mr3-ns mt3"
