@@ -45,11 +45,6 @@ header {
   }
 }
 
-.hover-google-red:focus,
-.hover-google-red:hover {
-  color: #d62d20;
-}
-
 .hover-github-gray:focus,
 .hover-github-gray:hover {
   color: #333333;
@@ -58,24 +53,6 @@ header {
 .hover-linkedin-blue:focus,
 .hover-linkedin-blue:hover {
   color: #0077b5;
-}
-
-.hover-twitter-blue:focus,
-.hover-twitter-blue:hover {
-  color: #1da1f2;
-}
-
-.highlight-animate-up {
-  box-shadow: inset 0 0px 0;
-  color: $blue;
-  display: inline-block;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    box-shadow: inset 0 -30px 0 0 $blue;
-    color: $near-white;
-  }
 }
 
 .underline-animate-up,
@@ -139,7 +116,7 @@ header {
   width: 12px;
   vertical-align: top;
   /*
-    Animation paramaters:
+    Animation parameters:
     blink = animation-name,
     1s = animation-duration,
     step-end = animation-timing-function,
@@ -197,7 +174,7 @@ header {
   }
 
   .work-tile-link {
-    width: calc(50% - 32px);
+    width: calc(33% - 16px);
   }
 }
 
@@ -205,9 +182,5 @@ header {
   .terminal-cursor {
     height: 48px;
     width: 24px;
-  }
-
-  .work-tile-link {
-    width: calc(25% - 32px);
   }
 }
